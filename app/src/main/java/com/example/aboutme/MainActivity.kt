@@ -9,10 +9,12 @@ import com.example.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("John Wick")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.myName = myName
         binding.doneButton.setOnClickListener{
             doneButtonClicked(it)
         }
@@ -20,7 +22,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun doneButtonClicked(view: View) {
         binding.apply {
-            nicknameText.text = nickname.text.toString()
+            myName?.nickname = nickname.text.toString()
+            invalidateAll()
             nickname.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
