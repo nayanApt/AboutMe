@@ -26,5 +26,26 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/nameTextView"
         app:srcCompat="@android:drawable/btn_star_big_on" />
+    
+    <ScrollView
+        android:id="@+id/bioScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/starImageView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/bioTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:textSize="@dimen/text_size"
+                android:textColor="@android:color/black"
+                android:layout_margin="16dp"
+                />
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
