@@ -9,66 +9,67 @@
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
         android:text="@string/name"
         android:textColor="@android:color/black"
-        android:layout_margin="16dp"
         android:textSize="@dimen/text_size" />
 
     <EditText
         android:id="@+id/nickname"
-        android:textSize="@dimen/text_size"
-        android:inputType="textPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_nickname"
-        android:textAlignment="center"/>
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="@dimen/text_size" />
 
     <Button
-        android:textColor="@android:color/white"
         android:id="@+id/done_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#4CAF50"
-        android:text="@string/done" />
+        android:text="@string/done"
+        android:textColor="@android:color/white" />
 
     <TextView
-        android:textColor="@android:color/black"
         android:id="@+id/nickname_text"
-        android:textSize="@dimen/text_size"
-        android:layout_marginBottom="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text=""
         android:textAlignment="center"
-        android:visibility="gone"
-        android:text="" />
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_size"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/starImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on" />
-    
+
     <ScrollView
         android:id="@+id/bioScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/bioTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/bio"
-                android:textSize="@dimen/text_size"
-                android:textColor="@android:color/black"
                 android:layout_margin="16dp"
-                />
+                android:text="@string/bio"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
     </ScrollView>
 
