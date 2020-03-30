@@ -17,6 +17,35 @@
         android:layout_margin="16dp"
         android:textSize="@dimen/text_size" />
 
+    <EditText
+        android:id="@+id/nickname"
+        android:textSize="@dimen/text_size"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_nickname"
+        android:textAlignment="center"/>
+
+    <Button
+        android:textColor="@android:color/white"
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/done" />
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/nickname_text"
+        android:textSize="@dimen/text_size"
+        android:layout_marginBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:text="" />
+
     <ImageView
         android:id="@+id/starImageView"
         android:layout_width="match_parent"
